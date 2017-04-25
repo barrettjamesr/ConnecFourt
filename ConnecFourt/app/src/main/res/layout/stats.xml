@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingEnd="@dimen/table_margin_hori"
+    android:paddingStart="@dimen/table_margin_hori"
+    android:stretchColumns="1">
+    <TableRow>
+        <TextView
+            style="@style/LabelStyle"
+            android:text=""
+            android:id="@+id/games"
+            android:padding="3dp" />
+        <TextView
+            style="@style/LabelStyle"
+            android:text="@string/total_wins"
+            android:gravity="center_horizontal"
+            android:padding="3dp" />
+        <TextView
+            style="@style/LabelStyle"
+            android:text="@string/streak"
+            android:gravity="center_horizontal"
+            android:padding="3dp" />
+    </TableRow>
+
+    <TableRow>
+        <TextView
+            style="@style/LabelStyle"
+            android:text="@string/player1"
+            android:padding="3dp" />
+        <TextView
+            style="@style/LabelStyle"
+            android:text=""
+            android:id="@+id/player1_total"
+            android:gravity="center_horizontal"
+            android:padding="3dp" />
+        <TextView
+            style="@style/LabelStyle"
+            android:text=""
+            android:id="@+id/player1_streak"
+            android:gravity="center_horizontal"
+            android:padding="3dp" />
+    </TableRow>
+
+    <TableRow>
+        <TextView
+            style="@style/LabelStyle"
+            android:text="@string/draw"
+            android:padding="3dp" />
+        <TextView
+            style="@style/LabelStyle"
+            android:text=""
+            android:id="@+id/drawn_total"
+            android:gravity="center_horizontal"
+            android:padding="3dp" />
+        <TextView
+            style="@style/LabelStyle"
+            android:text=""
+            android:id="@+id/drawn_streak"
+            android:gravity="center_horizontal"
+            android:padding="3dp" />
+    </TableRow>
+
+    <TableRow>
+        <TextView
+            style="@style/LabelStyle"
+            android:text="@string/player2"
+            android:padding="3dp" />
+        <TextView
+            style="@style/LabelStyle"
+            android:text=""
+            android:id="@+id/player2_total"
+            android:gravity="center_horizontal"
+            android:padding="3dp" />
+        <TextView
+            style="@style/LabelStyle"
+            android:text=""
+            android:id="@+id/player2_streak"
+            android:gravity="center_horizontal"
+            android:padding="3dp" />
+    </TableRow>
+
+    <TableRow>
+        <ProgressBar
+            style="?android:attr/progressBarStyleHorizontal"
+            android:layout_width="match_parent"
+            android:focusable="false"
+            android:layout_span="3"
+            android:layout_marginTop="@dimen/layout_margin_vert"
+            android:layout_height="wrap_content"
+            android:progressDrawable="@drawable/stats_progress"
+            android:id="@+id/progressWins"
+            android:max="100" />
+
+    </TableRow>
+</TableLayout>

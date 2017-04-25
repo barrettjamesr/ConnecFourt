@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+
+    <color name="background_grey">#FFDDDDDD</color>
+    <color name="text_grey">#FF888888</color>
+    <color name="black">#FF000000</color>
+
+    <color name="player2">#22b54e</color>
+    <color name="player1">#FFFF0000</color>
+    <color name="drawn">#FFad4f10</color>
+</resources>

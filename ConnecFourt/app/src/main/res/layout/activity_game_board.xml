@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_game_board"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:gravity="center_horizontal"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.smartphoneappdev.wcd.connecfourt.GameBoard">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/layoutTurn"
+        android:layout_marginTop="@dimen/layout_margin_vert"
+        android:layout_marginBottom="@dimen/layout_margin_vert"
+        android:gravity="center">
+
+        <TextView
+            style="@style/LabelStyle"
+            android:textSize="@dimen/hdr_text_sizes"
+            android:layout_marginEnd="@dimen/label_margin_end"
+            android:text=""
+            android:id="@+id/lblTurn" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:contentDescription=""
+            android:id="@+id/imgTurn" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/layoutGrid"
+        android:background="@drawable/fort_icon"
+        android:layout_below="@+id/layoutTurn"
+        android:layout_marginTop="@dimen/layout_margin_vert"
+        android:layout_marginBottom="@dimen/layout_margin_vert"
+        android:gravity="center">
+
+        <GridLayout
+            xmlns:android="http://schemas.android.com/apk/res/android"
+            android:id="@+id/grid_layout"
+            android:layout_width="wrap_content"
+            android:layout_height="300dp"
+            android:layout_marginTop="30dp"
+            android:background="@android:color/transparent"
+            android:padding="@dimen/grid_padding"
+            />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:id="@+id/layoutControl"
+        android:background="@color/background_grey"
+        android:layout_below="@+id/layoutGrid"
+        android:layout_marginTop="@dimen/layout_margin_vert"
+        android:layout_marginBottom="@dimen/layout_margin_vert"
+        android:layout_alignParentBottom="true"
+        android:gravity="center">
+
+        <ImageButton
+            style="?android:attr/borderlessButtonStyle"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:clickable="true"
+            android:focusable="true"
+            android:id="@+id/new_game"
+            android:background="@drawable/fort_logo"
+            android:layout_weight="1"
+            />
+
+        <ImageButton
+            style="?android:attr/borderlessButtonStyle"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:clickable="true"
+            android:focusable="true"
+            android:id="@+id/undo"
+            android:background="@drawable/undo"
+            android:layout_weight="1"
+            />
+
+        <ImageButton
+            style="?android:attr/borderlessButtonStyle"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:clickable="true"
+            android:focusable="true"
+            android:id="@+id/stats"
+            android:background="@drawable/stats"
+            android:layout_weight="1"
+            />
+
+        <ImageButton
+            style="?android:attr/borderlessButtonStyle"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:clickable="true"
+            android:focusable="true"
+            android:id="@+id/settings"
+            android:background="@drawable/settings"
+            android:layout_weight="1"
+            />
+
+    </LinearLayout>
+
+</RelativeLayout>

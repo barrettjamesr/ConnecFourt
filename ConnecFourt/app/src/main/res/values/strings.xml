@@ -1,0 +1,47 @@
+<resources>
+    <string name="app_name">ConnecFourt</string>
+
+    <string name="company">White Cloud Dragon Apps</string>
+    <string name="author_name">James Richard Barrett</string>
+    <string name="uni_num">UID: 3035348061</string>
+
+    <!--String Formats-->
+    <string name="format_date_iso">YYYY-MM-DD</string>
+
+    <string name="new_game">New Game</string>
+    <string name="undo">Undo</string>
+    <string name="stats">Statistics</string>
+    <string name="settings">Settings</string>
+
+    <string name="player">Player</string>
+    <string name="color">Color</string>
+    <string name="turn">Turn</string>
+    <string name="owns">\'s</string>
+    <string name="wins">Wins!!</string>
+    <string name="starts">Who Starts?</string>
+    <string name="full">Column is full, please try another</string>
+
+    <string name="yes">yes</string>
+    <string name="no">no</string>
+    <string name="ok">OK</string>
+    <string name="reset">Reset Stats</string>
+    <string name="cancel">Cancel</string>
+    <string name="sameColours">Same Colours Selected</string>
+    <string name="moreFun">You might have more fun if you play with different colours...</string>
+    <string name="restart">Do you want to quit and start a new game?</string>
+
+    <string name="player1">Player 1</string>
+    <string name="player2">Player 2</string>
+    <string name="draw">Drawn Game</string>
+    <string name="total_wins">Total Wins</string>
+    <string name="streak">Best Streak</string>
+    <string name="games">Games:</string>
+
+    <string-array name="array_start">
+        <item>Random</item>
+        <item>Player 1</item>
+        <item>Player 2</item>
+    </string-array>
+
+
+</resources>
